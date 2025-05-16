@@ -24,3 +24,39 @@ nav ul li a, nav ul li span, header .action { display: block; padding: 0.5rem; }
 .content textarea { min-height: 12em; resize: vertical; }
 input.danger { color: #cc2f2e; }
 input[type=submit] { align-self: start; min-width: 10em; }
+
+
+.post .body {
+    display: flex;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1, #fbc2eb, #fad0c4, #ff9a9e);
+    background-size: 300% 300%;
+    animation: gradientAnimation 8s ease infinite;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    overflow: hidden;
+  }
+  
+  /* Gradient Animation */
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Example Content */
+  h1 {
+    font-size: 3rem;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+  }
